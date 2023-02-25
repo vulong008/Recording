@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private Context context;
+    private Context cconlG;
     public static final String DATABASE_NAME = "saved_recording.db";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME = "saved_recording_table";
@@ -33,7 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
+        this.cconlG = context;
     }
 
     @Override
